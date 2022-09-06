@@ -7,7 +7,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import org.springframework.web.reactive.function.client.WebClient;
 
-@Route(value = "/index1")
+@Route(value = "/index")
 public class CashierView extends VerticalLayout {
     private TextField money, b_1000, b_500, b_100, b_20, b_10, b_5, b_1;
     private Button go_change;

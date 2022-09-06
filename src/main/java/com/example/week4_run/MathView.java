@@ -8,7 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 import org.springframework.web.reactive.function.client.WebClient;
 
-@Route(value = "/index")
+@Route(value = "/index1")
 public class MathView extends VerticalLayout {
     private TextField num1, num2, ans;
     private Button btn_plus, btn_minus, btn_milt, btn_div, btn_mod, btn_max;
@@ -17,6 +17,7 @@ public class MathView extends VerticalLayout {
         num1 = new TextField("Number 1");
         num2 = new TextField("Number 2");
         ans = new TextField("Answer");
+        ans.setReadOnly(true);
 
         btn_plus = new Button("+");
         btn_minus = new Button("-");
